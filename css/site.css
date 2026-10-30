@@ -1,0 +1,32 @@
+/* Site-specific additions on top of the v1.1 design system (tokens.css + base.css). */
+/* Mobile nav toggle (base.css only defines show/hide breakpoints) */
+.nav-toggle{align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 var(--sp-3);background:transparent;border:1.5px solid var(--c-wine);border-radius:var(--r-pill);color:var(--c-wine);font-weight:600;font-size:var(--fs-sm);cursor:pointer}
+.header-cta{display:none}
+@media (min-width:48em){.header-cta{display:inline-flex}}
+@media (max-width:47.99em){
+  .site-header .container{flex-wrap:wrap}
+  .site-header nav{order:3;width:100%}
+  .nav.is-open{display:flex;flex-direction:column;gap:0;padding-bottom:var(--sp-3)}
+  .nav.is-open a{display:block;padding:var(--sp-3) 0;border-top:1px solid var(--c-line)}
+}
+/* Card media placeholders (CSS gradients: zero image bytes) */
+.media--hot{background:linear-gradient(135deg,var(--c-butter),var(--c-hot))}
+.media--cold{background:linear-gradient(135deg,var(--c-butter),var(--c-cold))}
+.media--savory{background:linear-gradient(135deg,var(--c-butter),var(--c-savory))}
+.card .btn{align-self:flex-start;margin-top:auto}
+.section-head{margin-bottom:var(--sp-6)}
+.section-head .eyebrow+h2,.section-head .eyebrow+h1{margin-top:var(--sp-3)}
+.center{text-align:center}.center p{margin-inline:auto}
+.page-hero{padding-block:var(--sp-7) var(--sp-5);background:radial-gradient(120% 80% at 80% 0%,var(--c-paper),var(--c-cream) 60%)}
+.page-hero h1{margin-block:var(--sp-3)}
+.jump{display:flex;flex-wrap:wrap;gap:var(--sp-2);list-style:none;padding:0;margin-top:var(--sp-4)}
+.jump a{display:inline-flex;align-items:center;min-height:44px;padding:0 1em;border:1.5px solid var(--accent);color:var(--accent);border-radius:var(--r-pill);font-weight:600;font-size:var(--fs-sm);text-decoration:none}
+.menu-section:first-child{margin-top:0}
+.menu-section .lead{margin-top:var(--sp-2);font-size:var(--fs-base)}
+.about{display:grid;gap:var(--sp-6);align-items:center}
+.about img{width:min(80%,360px);margin-inline:auto;border-radius:var(--r-lg)}
+.about .stack .btn{margin-top:var(--sp-5)}
+@media (min-width:64em){.about{grid-template-columns:1fr 1.3fr}}
+.order-form{margin-top:var(--sp-5);margin-inline:auto}
+.order-wrap .notice{max-width:48rem;margin-inline:auto}
+@media (prefers-reduced-motion:reduce){*{transition-duration:0s!important;scroll-behavior:auto!important}}

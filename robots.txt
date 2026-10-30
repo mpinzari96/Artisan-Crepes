@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+# PLACEHOLDER domain
+Sitemap: https://artisancrepes.example.com/sitemap.xml
